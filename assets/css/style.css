@@ -7,36 +7,60 @@
 body {
     background-color: #d9dcd6;
 }
-
-.header {
+/*removed unneeded div and created header element*/
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
-.header h1 {
+/*no need for header*/
+h1 {
     display: inline-block;
     font-size: 48px;
 }
-
-.header h1 .seo {
-    color: #d9dcd6;
+/*removed redundancy with classes all using same parameters, changed to element*/
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/*removed redundancy with classes all using same parameters*/
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+/*Added h4 to better differentiate with h2*/
+h4 {
+    font-size:20px;
+    font-weight:bold;
+}
+/*Removed footer as class*/
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
-.header div {
+
+/*no need for header*/
+.seo {
+    color: #d9dcd6;
+}
+/*no need for seperate header class, replaced div with nav*/
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
-.header div ul {
+/*Removed header reference*/
+ul {
     list-style-type: none;
 }
-
-.header div ul li {
+/*Removed header div references */
+li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -46,27 +70,33 @@ a {
     text-decoration: none;
 }
 
+/*Added margin to bottom for better spacing in benefits sections, allowing removal of 3 unneeded classes*/
 p {
     font-size: 16px;
+    margin-bottom: 32px;
 }
 
+/*modified hero and removed image reference. Added it directly to HTML. added display block*/
 .hero {
-    height: 800px;
+    height: 1000px; /*increased to 1000px from 800px*/
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+    /* removed --> background-image: url("../images/digital-marketing-meeting.jpg"); */
+   /* removed  background-size: cover;
+    background-position: center;*/
+    display: block;
 }
-
+/*Included max-height in classes of float right and left.*/
 .float-left {
     float: left;
     margin-right: 25px;
+    max-height: 200px;
 }
 
 .float-right {
     float: right;
     margin-left: 25px;
+    max-height: 200px;
 }
 
 .content {
@@ -75,8 +105,10 @@ p {
     margin-left: 20px;
 }
 
+/*removed 3 benefit classes and rolled color into benefits*/
 .benefits {
     margin-right: 20px;
+    margin-bottom: 32px;
     padding: 20px;
     clear: both;
     float: right;
@@ -84,57 +116,17 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/*Condensed image parameters for right benefits section into 1 set of parameters*/
+.img2 {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/*Consolidated the 3 different classes into 1*/
+.contents {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -142,59 +134,6 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+/*Removed reference to image and included max-height in classes of float right and left.*/
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
-}

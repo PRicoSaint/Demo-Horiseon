@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
+<!--Horiseon website index. It shows the homepage for the Horiseon company, detailing the benefits they bring to possible customers and how they achieve those benefits.-->
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <!--Changed "website" tab title to something more descriptive of the page-->    
     <title>Welcome to Horiseon!</title>
 </head>
+<!--The header contains the name of the company, with a navigation link section, each taking the user to a different section of the page.-->
 <header>
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <!--Replaced div with nav to show it is for navigation links-->
+        <!--Replaced div with nav to show it is for navigation links. Links the user to 3 different sections of the same page.-->
         <nav>
             <ul>
                 <li>
-                    <!--This anchor was not working. It was not sending user to place on webpage.-->
+                    <!--This anchor was not working. It was not sending user to place on webpage. It works correctly now-->
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
                 </li>
                 <li>
@@ -26,10 +27,11 @@
         </nav>
 </header>
 <body>
-    <!--This section was referencing class as image. Connected URL as well. Removed image reference from css and added directly here. Added alt attribute to be easier searchable. Used image from asset folder-->
-    <div> <!--removed class="hero"-->
-        <img src="./assets/images/digital-marketing-meeting.jpg" class="hero" alt="Meeting in conference room with various people" />  
+    <!--This section was referencing to class only and only connected URL as well, which may break in the future. Removed image reference from css and added directly here. Added alt attribute to be easier searchable. Used image from asset folder instead of URL-->
+    <div>
+        <img src="./assets/images/digital-marketing-meeting.jpg" class="meeting" alt="Meeting in conference room with various people" />  
     </div>
+    <!--This section is for the main content of the page, detailing the benefits of Horiseon for a possible customer's company. Each contains an image and paragraph with more information.-->
     <div class="content">
             <!--For the link to work above and take the user to "search engine optimization" added id="search-engine optimization"-->
             <!--Changed class to contents, matching all 3 children. Added alt attribute-->
@@ -57,6 +59,7 @@
             </p>
         </div>
     </div>
+    <!--This section is a sidebar that contains the benefits of using Horiseon. It is divided into 3 small sections with thumbnail pic and short description.-->
     <div class="benefits">
         <!--removed class in each of the children to clean up code as its unneeded due to changes in CSS-->
         <div>
@@ -87,7 +90,7 @@
         </div>
     </div>
 </body>
-<!--Removed footer as class and converted to element-->
+<!--Removed footer as class and converted to element. It contains small detail showing Horiseon is not lacking in soul. Includes small heart-->
 <footer>
     <h4>Made with ❤️️ by Horiseon</h4>
     <p>

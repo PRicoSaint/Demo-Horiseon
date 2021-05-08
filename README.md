@@ -19,5 +19,5 @@
 ### https://pricosaint.github.io/Demo-Horiseon/
 
 # See screenshot of finished page below:
-![Image of Horiseon Webpage](/images/Screenshot.png)
+![Screenshot of Horiseon - Esteban Santos](https://user-images.githubusercontent.com/81050926/117527394-5b312c00-af91-11eb-9b87-cb8d1cdf035a.PNG)
 
